@@ -47,4 +47,5 @@ Rails.application.configure do
   # Raises error for missing translations.
   # config.action_view.raise_on_missing_translations = true
   config.cors_origins = ENV['CORS_ORIGINS'].nil? ? [] : JSON.parse(ENV['CORS_ORIGINS'])
+  config.cors_allow_all_origins = ENV['CORS_ALLOW_ALL_ORIGINS'].nil? ? 'true' : ENV['CORS_ALLOW_ALL_ORIGINS']
 end

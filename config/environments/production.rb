@@ -111,4 +111,5 @@ Rails.application.configure do
   # config.active_record.database_resolver_context = ActiveRecord::Middleware::DatabaseSelector::Resolver::Session
 
   config.cors_origins = ENV['CORS_ORIGINS'].nil? ? ['https://cms.editorialistyx.com', 'https://editorialist.com'] : JSON.parse(ENV['CORS_ORIGINS'])
+  config.cors_allow_all_origins = ENV['CORS_ALLOW_ALL_ORIGINS'].nil? ? 'true' : ENV['CORS_ALLOW_ALL_ORIGINS']
 end

@@ -60,4 +60,5 @@ Rails.application.configure do
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
   config.cors_origins = ENV['CORS_ORIGINS'].nil? ? [] : JSON.parse(ENV['CORS_ORIGINS'])
+  config.cors_allow_all_origins = ENV['CORS_ALLOW_ALL_ORIGINS'].nil? ? 'true' : ENV['CORS_ALLOW_ALL_ORIGINS']
 end
