@@ -11,7 +11,10 @@ API'S
    
    
    
-url for backend -> 
+url for backend -> https://students-registration123.herokuapp.com/
 
+
+curl command  -> 
+curl --location --request GET 'https://students-registration123.herokuapp.com/atm_services/get_money_change?input_amount=106'
    
  
