@@ -112,5 +112,5 @@ Rails.application.configure do
 
   config.cors_origins = ENV['CORS_ORIGINS'].nil? ? ['https://cms.editorialistyx.com', 'https://editorialist.com'] : JSON.parse(ENV['CORS_ORIGINS'])
   config.cors_allow_all_origins = ENV['CORS_ALLOW_ALL_ORIGINS'].nil? ? 'true' : ENV['CORS_ALLOW_ALL_ORIGINS']
-  config.available_coins = ENV['AVAILABLE_COINS'].nil? ? '25,10,5,1' : ENV['AVAILABLE_COINS']
+  config.available_currency = ENV['AVAILABLE_CURRENCY'].nil? ? '25,10,5,1' : ENV['AVAILABLE_CURRENCY']
 end
