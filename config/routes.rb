@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  resources :atm_services do
+    collection do
+      get 'get_money_change'
+    end
+  end
   resources :students do
     collection do
       get 'get_all_students'

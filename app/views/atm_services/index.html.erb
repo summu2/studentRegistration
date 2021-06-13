@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Atm Services</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @atm_services.each do |atm_service| %>
+      <tr>
+        <td><%= link_to 'Show', atm_service %></td>
+        <td><%= link_to 'Edit', edit_atm_service_path(atm_service) %></td>
+        <td><%= link_to 'Destroy', atm_service, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Atm Service', new_atm_service_path %>
